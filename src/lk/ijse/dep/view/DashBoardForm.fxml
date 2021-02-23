@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="485.0" prefWidth="299.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.DashBoardFormController">
+   <children>
+      <ImageView fitHeight="81.0" fitWidth="185.0" layoutX="109.0" layoutY="126.0" onMouseClicked="#imgAddCustomer_OnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="109.0" AnchorPane.rightAnchor="109.0">
+         <image>
+            <Image url="@assert/add%20cutomer.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="81.0" fitWidth="150.0" layoutX="109.0" layoutY="260.0" onMouseClicked="#imgSearch_OnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="109.0" AnchorPane.rightAnchor="109.0">
+         <image>
+            <Image url="@assert/search.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="30.0" layoutY="101.0" prefHeight="8.0" prefWidth="246.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <StackPane layoutX="8.0" layoutY="14.0" prefHeight="75.0" prefWidth="289.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assert/wwhite.png" />
+               </image>
+               <StackPane.margin>
+                  <Insets right="-106.0" />
+               </StackPane.margin>
+            </ImageView>
+            <Label alignment="CENTER" text="Welcome !">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <padding>
+                  <Insets left="-43.0" />
+               </padding>
+            </Label>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+.text-field {
+    -fx-background-radius: 25px/50px;
+}
+
+.button {
+    -fx-background-color: #1E90FF;
+    -fx-background-radius: 25px;
+}
+
+.button:hover {
+    -fx-background-color: #00BFFF;
+}
+
+.label:hover {
+    -fx-text-fill: #B22222;
+}
+
+
+#btn:hover {
+    -fx-background-color: red;
+}
+
+

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="569.0" prefWidth="380.0" style="-fx-background-color: white;" stylesheets="@css/register.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.RegisterFormController">
+   <children>
+      <Label alignment="CENTER" layoutX="143.0" layoutY="14.0" prefHeight="35.0" prefWidth="94.0" text="Sign Up" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="143.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="120.0" layoutY="49.0" prefHeight="20.0" prefWidth="140.0" text="Create an Account !" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtFullName" layoutX="49.0" layoutY="95.0" prefHeight="31.0" prefWidth="283.0" promptText="Full Name" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <TextField fx:id="txtUser" layoutX="49.0" layoutY="151.0" prefHeight="31.0" prefWidth="283.0" promptText="Username" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <TextField fx:id="txtEmail" layoutX="49.0" layoutY="205.0" prefHeight="31.0" prefWidth="283.0" promptText="Email" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <TextField fx:id="txtPass" layoutX="50.0" layoutY="263.0" prefHeight="31.0" prefWidth="283.0" promptText="Password" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <TextField fx:id="txtConPass" layoutX="50.0" layoutY="322.0" prefHeight="31.0" prefWidth="283.0" promptText="Confirm Password" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" />
+      <Label fx:id="lblFullName" layoutX="64.0" layoutY="126.0" prefHeight="20.0" prefWidth="256.0" text="This is required." textFill="#fc0909" AnchorPane.leftAnchor="64.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUser" layoutX="64.0" layoutY="182.0" prefHeight="20.0" prefWidth="256.0" text="This is required." textFill="#fc0909" AnchorPane.leftAnchor="64.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEmail" layoutX="62.0" layoutY="236.0" prefHeight="20.0" prefWidth="256.0" text="This is required." textFill="#fc0909" AnchorPane.leftAnchor="64.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPass" layoutX="62.0" layoutY="294.0" prefHeight="20.0" prefWidth="256.0" text="This is required." textFill="#fc0909" AnchorPane.leftAnchor="64.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblConPass" layoutX="62.0" layoutY="353.0" prefHeight="20.0" prefWidth="256.0" text="This is required." textFill="#fc0909" AnchorPane.leftAnchor="64.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <StackPane layoutY="435.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btnRegister" mnemonicParsing="false" onAction="#btnRegister_OnAction" prefHeight="30.0" prefWidth="246.0" text="Continue" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </StackPane>
+      <Label alignment="CENTER" layoutX="50.0" layoutY="392.0" prefHeight="20.0" prefWidth="256.0" text="By clicking &quot;Continue&quot;, you agree to the " AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="74.0" AnchorPane.topAnchor="392.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="134.0" layoutY="412.0" prefHeight="20.0" prefWidth="41.0" text="and" AnchorPane.leftAnchor="134.0" AnchorPane.rightAnchor="205.0" AnchorPane.topAnchor="412.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="169.0" layoutY="412.0" onMouseClicked="#lblPrivacy_OnAction" prefHeight="20.0" prefWidth="94.0" text="Privacy Policy" textFill="#036be1" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="117.0" AnchorPane.topAnchor="412.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="302.0" layoutY="392.0" onMouseClicked="#lblTerms_OnAction" prefHeight="20.0" prefWidth="41.0" text="Terms" textFill="#0363ff" AnchorPane.leftAnchor="302.0" AnchorPane.rightAnchor="37.0" AnchorPane.topAnchor="392.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" layoutX="83.0" layoutY="501.0" prefHeight="20.0" prefWidth="164.0" text="Already have an account? " AnchorPane.leftAnchor="83.0" AnchorPane.rightAnchor="133.0" AnchorPane.topAnchor="501.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="240.0" layoutY="501.0" onMouseClicked="#lblLogin_OnAction" prefHeight="20.0" prefWidth="57.0" text="Sign In" textFill="#0259e4" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="83.0" AnchorPane.topAnchor="501.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <TextField fx:id="txtAcc" editable="false" layoutX="51.0" layoutY="521.0" prefHeight="31.0" prefWidth="283.0" promptText="Account Number" />
+   </children>
+</AnchorPane>
